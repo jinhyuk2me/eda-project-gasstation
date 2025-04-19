@@ -1,3 +1,5 @@
+![banner](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/banner.png?raw=true)
+
 # 서울시 주유소 데이터 분석   
 > **Exploratory Data Analysis on Gas Stations in Seoul**
 
