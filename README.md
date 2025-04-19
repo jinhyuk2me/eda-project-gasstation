@@ -4,13 +4,14 @@
 
 ---
 
-# 서울시 주유소 데이터 분석   
+# 서울시 주유소 데이터 분석  
 > **Exploratory Data Analysis on Gas Stations in Seoul**
 
+---
 
 ## 📌 프로젝트 개요
 
-서울시 주유소의 **가격, 브랜드, 운영 형태, 위치 정보**를 수집·정리하여 **지역별 가격 분포와 시설 특성**을 분석한 프로젝트입니다.
+서울시 주유소의 **가격, 브랜드, 운영 형태, 위치 정보**를 수집·정리하여 **지역별 가격 분포와 시설 특성**을 분석한 프로젝트입니다.  
 **Selenium** 기반 크롤링과 **Google Maps API**를 활용해 지도 시각화를 포함한 EDA를 수행했습니다.
 
 ---
@@ -30,20 +31,19 @@
 ## 🧠 분석 항목
 
 ### 📊 가격 분석
-- 자치구별 **유종별 평균 가격 분석**  
-- **보통휘발유 가격 기준 상/하위 20개 주유소** 비교  
+- 자치구별 **유종별 평균 가격 분석**
+- **보통휘발유 기준 상/하위 20개 주유소 비교**
 
 ### 🕒 운영 특성
-- 자치구별 **24시간 운영 주유소 수**  
-- 자치구별 **편의점 유무 주유소 수**  
+- 자치구별 **24시간 운영 주유소 수**
+- 자치구별 **편의점 운영 주유소 수**
 
 ### 🗺️ 위치 시각화
-- **편의점이 있는 주유소**만 필터링하여 지도 시각화  
+- **편의점이 있는 주유소만 지도 시각화**
 - **유종별 가격 분포 지도 시각화 (보통/고급/경유/등유)**
 
 ### 🔗 상관관계 분석
-- 유종 간 가격 상관관계 분석 (Corr Matrix & Scatter)
-
+- 유종 간 가격 상관관계 분석 (Correlation Table & Scatter)
 
 ---
 
@@ -61,37 +61,63 @@
 
 ## 🗺️ 시각화 예시
 
-### 📌 일반 주유소 vs 셀프 주유소 가격 비교
-![Self vs General](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/self%20vs%20general.png?raw=true)
+### 🔧 Figure A. 주유소 유형별(셀프/일반) 보통휘발유 가격 분포
+![Figure A](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/self%20vs%20general.png?raw=true)
 
-### 📌 브랜드 및 셀프 여부별 가격 비교
-![Brand & Self](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/brand%20self%20price.png?raw=true)
+---
 
-### 📌 자치구별 보통/고급/경유/등유 가격 분포
-![Regular Map](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/regular%20price%20by%20gu.png?raw=true)
-![Regular Bar](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/regular%20price%20by%20gu%20bar.png?raw=true)
-![Premium Map](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/premium%20price%20by%20gu.png?raw=true)
-![Premium Bar](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/premium%20price%20by%20gu%20bar.png?raw=true)
-![Diesel Map](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/diesel%20price%20by%20gu.png?raw=true)
-![Diesel Bar](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/diesel%20price%20by%20gu%20bar.png?raw=true)
-![Kerosene Map](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/kerosene%20price%20by%20gu.png?raw=true)
-![Kerosene Bar](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/kerosene%20price%20by%20gu%20bar.png?raw=true)
+### 🏷️ Figure B. 브랜드 및 주유 형태별 가격 차이
+![Figure B](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/brand%20self%20price.png?raw=true)
 
-### 📌 24시간 운영/편의점 유무 분석
-![24hr Map](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/24hour%20ratio%20by%20gu.png?raw=true)
-![24hr Bar](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/24hour%20ratio%20by%20gu%20bar.png?raw=true)
-![CVS Map](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/cvs%20ratio%20by%20gu.png?raw=true)
-![CVS Bar](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/cvs%20ratio%20by%20gu%20bar.png?raw=true)
+---
 
-### 📌 보통휘발유 가격 상/하위 Top 20
-![Expensive Top20 Table](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/most%20expensive%20table.png?raw=true)
-![Expensive Top20 Map](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/most%20expensive%20map.png?raw=true)
-![Cheap Top20 Table](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/most%20cheap%20table.png?raw=true)
-![Cheap Top20 Map](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/most%20cheap%20map.png?raw=true)
+### 💸 Figure C. 자치구별 유종별 가격 분석
 
-### 📌 유종 간 가격 상관관계
-![Correlation Table](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/fuel%20corr%20table.png?raw=true)
-![Correlation Scatter](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/fuel%20corr%20scatter.png?raw=true)
+#### Figure C-1. 보통휘발유 (Regular)
+  ![Regular Map](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/regular%20price%20by%20gu.png?raw=true)
+  ![Regular Bar](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/regular%20price%20by%20gu%20bar.png?raw=true)
+
+#### Figure C-2. 고급휘발유 (Premium)
+  ![Premium Map](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/premium%20price%20by%20gu.png?raw=true)
+  ![Premium Bar](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/premium%20price%20by%20gu%20bar.png?raw=true)
+
+#### Figure C-3. 경유 (Diesel)
+  ![Diesel Map](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/diesel%20price%20by%20gu.png?raw=true) 
+  ![Diesel Bar](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/diesel%20price%20by%20gu%20bar.png?raw=true)
+
+#### Figure C-4. 실내등유 (Kerosene)
+  ![Kerosene Map](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/kerosene%20price%20by%20gu.png?raw=true) 
+  ![Kerosene Bar](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/kerosene%20price%20by%20gu%20bar.png?raw=true)
+
+---
+
+### 🕓 Figure D. 자치구별 주유소 운영 특성
+
+#### Figure D-1. 24시간 운영 주유소 비율
+  ![24hr Map](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/24hour%20ratio%20by%20gu.png?raw=true) 
+  ![24hr Bar](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/24hour%20ratio%20by%20gu%20bar.png?raw=true)
+
+#### Figure D-2. 편의점 운영 주유소 비율
+  ![CVS Map](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/cvs%20ratio%20by%20gu.png?raw=true)
+  ![CVS Bar](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/cvs%20ratio%20by%20gu%20bar.png?raw=true)
+
+---
+
+### 🏆 Figure E. 보통휘발유 기준 상/하위 주유소
+
+#### Figure E-1. Top 20 비싼 주유소
+  ![Expensive Table](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/most%20expensive%20table.png?raw=true)
+  ![Expensive Map](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/most%20expensive%20map.png?raw=true)
+
+#### Figure E-2. Top 20 저렴한 주유소
+  ![Cheap Table](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/most%20cheap%20table.png?raw=true) 
+  ![Cheap Map](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/most%20cheap%20map.png?raw=true)
+
+---
+
+### 🔗 Figure F. 유종 간 가격 상관관계 분석
+  ![Correlation Table](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/fuel%20corr%20table.png?raw=true)
+  ![Correlation Scatter](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/fuel%20corr%20scatter.png?raw=true)
 
 ---
 
@@ -113,3 +139,4 @@
 | 이름 | GitHub |
 |------|--------|
 | 장진혁 (Jinhyuk Jang) | [@jinhyuk2me](https://github.com/jinhyuk2me) |
+
