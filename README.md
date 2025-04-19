@@ -1,2 +1,50 @@
-# eda-project-gasstation
-Multi-dimensional analysis of Seoul gas stations: price trends, brand comparison, and location-based patterns. 
+# 서울시 주유소 데이터 분석 🛢️  
+Exploratory Data Analysis on Gas Stations in Seoul (via Web Crawling)
+
+## 📌 프로젝트 개요
+`opinet.co.kr` 웹사이트에서 서울시 내 주유소 데이터를 직접 크롤링하여,  
+가격 정보, 브랜드, 위치 데이터를 바탕으로 다양한 관점에서 분석을 수행했습니다.
+
+휘발유 및 경유 가격 분포, 브랜드별 가격 차이, 자치구별 고가/저가 패턴,  
+공간적 분포를 지도에 시각화하여, **소비자 관점에서의 통계적 인사이트**를 도출하는 것이 목적입니다.
+
+## 🌐 데이터 수집
+- **수집 방식**: `requests` + `BeautifulSoup` 기반 웹 크롤링
+- **수집 대상**: 서울시 전체 주유소 (`opinet.co.kr` 지역별 주유소 목록)
+- **수집 항목**:  
+  - 주유소명  
+  - 주소 (도로명)  
+  - 브랜드 (SK에너지 / GS칼텍스 / 현대오일뱅크 등)  
+  - 휘발유 / 경유 가격  
+  - 위치 좌표 (geopy + Kakao geocoding)
+
+## 🧠 분석 항목
+- 자치구별 주유소 수 및 평균 가격 비교
+- 휘발유 / 경유 가격 분포 및 이상치 탐색
+- 브랜드별 가격 경향
+- 고가/저가 주유소 위치 시각화 (folium)
+- 브랜드별 밀집도 시각화
+
+## 📊 주요 결과 요약
+- **휘발유 평균 가격은 자치구에 따라 약 150원 차이**
+- **SK에너지 / GS칼텍스는 평균적으로 고가**,  
+  **현대오일뱅크 / 알뜰주유소는 저가 경향**
+- **고가 주유소는 도심 밀집, 저가 주유소는 외곽에 분포**
+- **브랜드와 가격 간 뚜렷한 상관관계 시사**
+
+## 🗺️ 시각화 예시
+(예: `img/` 내 시각화 이미지 삽입)
+- 고가/저가 주유소 분포 지도  
+- 브랜드별 위치 클러스터링  
+- 자치구별 평균 가격 히트맵
+
+## 🛠️ 사용 기술
+| 분류 | 도구 |
+|------|------|
+| 언어 | Python |
+| 크롤링 | requests, BeautifulSoup |
+| 데이터 처리 | pandas, numpy |
+| 시각화 | matplotlib, seaborn, folium |
+| 지오코딩 | geopy, Kakao API |
+| 환경 | Jupyter Notebook, VS Code |
+
