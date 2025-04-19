@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/banner.png?raw=true" width="80%">
+  <img src="https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/banner.png?raw=true" width="100%">
 </p>
 
 ---
