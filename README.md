@@ -1,5 +1,5 @@
 # 서울시 주유소 데이터 분석   
-**Exploratory Data Analysis on Gas Stations in Seoul**
+> **Exploratory Data Analysis on Gas Stations in Seoul**
 
 ## 📌 프로젝트 개요
 
@@ -39,7 +39,7 @@
 | 항목 | 인사이트 |
 |------|----------|
 | **자치구별 가격 차이** | 휘발유 가격은 자치구 간 최대 **400원 차이** 발생 |
-| **브랜드 경향** | **SK에너지 / GS칼텍스는 고가**, **S-OIL / 알뜰주유소는 저가** 경향 |
+| **브랜드 경향** | **SK에너지 / GS칼텍스**는 고가, **S-OIL / 알뜰주유소**는 저가 경향 |
 | **공간 분포** | 고가 주유소는 도심 밀집, 저가 주유소는 외곽에 분포 |
 | **운영 특성** | 24시간 운영 비율은 **중구/동작구/송파구**에서 높음 |
 | **유종 상관성** | 가격 간 상관관계 매우 높음 (휘발유↔경유: 0.988 등) |
@@ -48,30 +48,37 @@
 
 ## 🗺️ 시각화 예시
 
-> `img/` 폴더에 포함된 주요 시각화 결과들입니다.
-
 ### 📌 일반 주유소 vs 셀프 주유소 가격 비교
-![Self vs General](./img/self_vs_general.png)
+![Self vs General](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/self%20vs%20general.png?raw=true)
 
 ### 📌 브랜드 및 셀프 여부별 가격 비교
-![Brand & Self](./img/brand_self_price.png)
+![Brand & Self](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/brand%20self%20price.png?raw=true)
 
 ### 📌 자치구별 보통/고급/경유/등유 가격 분포
-![Regular](./img/regular_price_by_gu.png)  
-![Premium](./img/premium_price_by_gu.png)  
-![Diesel](./img/diesel_price_by_gu.png)  
-![Kerosene](./img/kerosene_price_by_gu.png)
+![Regular Map](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/regular%20price%20by%20gu.png?raw=true)
+![Regular Bar](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/regular%20price%20by%20gu%20bar.png?raw=true)
+![Premium Map](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/premium%20price%20by%20gu.png?raw=true)
+![Premium Bar](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/premium%20price%20by%20gu%20bar.png?raw=true)
+![Diesel Map](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/diesel%20price%20by%20gu.png?raw=true)
+![Diesel Bar](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/diesel%20price%20by%20gu%20bar.png?raw=true)
+![Kerosene Map](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/kerosene%20price%20by%20gu.png?raw=true)
+![Kerosene Bar](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/kerosene%20price%20by%20gu%20bar.png?raw=true)
 
 ### 📌 24시간 운영/편의점 유무 분석
-![24hr](./img/24hour_ratio_by_gu.png)  
-![CVS](./img/cvs_ratio_by_gu.png)
+![24hr Map](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/24hour%20ratio%20by%20gu.png?raw=true)
+![24hr Bar](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/24hour%20ratio%20by%20gu%20bar.png?raw=true)
+![CVS Map](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/cvs%20ratio%20by%20gu.png?raw=true)
+![CVS Bar](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/cvs%20ratio%20by%20gu%20bar.png?raw=true)
 
 ### 📌 보통휘발유 가격 상/하위 Top 20
-![Expensive Top20](./img/most_expensive.png)  
-![Cheap Top20](./img/most_cheap.png)
+![Expensive Top20 Table](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/most%20expensive%20table.png?raw=true)
+![Expensive Top20 Map](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/most%20expensive%20map.png?raw=true)
+![Cheap Top20 Table](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/most%20cheap%20table.png?raw=true)
+![Cheap Top20 Map](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/most%20cheap%20map.png?raw=true)
 
 ### 📌 유종 간 가격 상관관계 히트맵
-![Correlation](./img/fuel_corr_matrix.png)
+![Correlation Table](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/fuel%20corr%20table.png?raw=true)
+![Correlation Scatter](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/fuel%20corr%20scatter.png?raw=true)
 
 ---
 
