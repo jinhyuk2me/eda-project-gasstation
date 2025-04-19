@@ -1,4 +1,4 @@
-# 서울시 주유소 데이터 분석 🛢️  
+# 🛢️ 서울시 주유소 데이터 분석   
 **Exploratory Data Analysis on Gas Stations in Seoul**
 
 ## 📌 프로젝트 개요
