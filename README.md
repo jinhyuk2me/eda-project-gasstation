@@ -1,4 +1,6 @@
-![banner](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/banner.png?raw=true)
+<p align="center">
+  <img src="https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/banner.png?raw=true" width="80%">
+</p>
 
 ---
 
@@ -28,14 +30,21 @@
 
 ## 🧠 분석 항목
 
-- 자치구별 **유종별 평균 가격 분석** → 막대그래프 시각화
-- 자치구별 **24시간 운영 주유소 수** 비교
-- 자치구별 **편의점 운영 주유소 수** 비교
-- **서울시 기준 보통휘발유 가격** 상위 20 / 하위 20 주유소 비교
-- **편의점이 있는 주유소만 필터링하여 지도에 시각화**
-- **유종 간 상관관계 분석 (corr matrix)**
-  - 보통휘발유 ↔ 경유: 0.988  
-  - 고급휘발유 ↔ 실내등유: 0.83 등
+### 📊 가격 분석
+- 자치구별 **유종별 평균 가격 분석**  
+- **보통휘발유 가격 기준 상/하위 20개 주유소** 비교  
+
+### 🕒 운영 특성
+- 자치구별 **24시간 운영 주유소 수**  
+- 자치구별 **편의점 유무 주유소 수**  
+
+### 🗺️ 위치 시각화
+- **편의점이 있는 주유소**만 필터링하여 지도 시각화  
+- **유종별 가격 분포 지도 시각화 (보통/고급/경유/등유)**
+
+### 🔗 상관관계 분석
+- 유종 간 가격 상관관계 분석 (Corr Matrix & Scatter)
+
 
 ---
 
@@ -102,5 +111,8 @@
 
 ## 🙋‍♂️ 기여자
 
-**장진혁 (Jinhyuk Jang)**
-- GitHub: [@jinhyuk2me](https://github.com/jinhyuk2me)
+## 🙋‍♂️ 기여자
+
+| 이름 | GitHub |
+|------|--------|
+| 장진혁 (Jinhyuk Jang) | [@jinhyuk2me](https://github.com/jinhyuk2me) |
