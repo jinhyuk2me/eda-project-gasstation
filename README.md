@@ -76,7 +76,7 @@
 ![Cheap Top20 Table](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/most%20cheap%20table.png?raw=true)
 ![Cheap Top20 Map](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/most%20cheap%20map.png?raw=true)
 
-### 📌 유종 간 가격 상관관계 히트맵
+### 📌 유종 간 가격 상관관계
 ![Correlation Table](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/fuel%20corr%20table.png?raw=true)
 ![Correlation Scatter](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/fuel%20corr%20scatter.png?raw=true)
 
