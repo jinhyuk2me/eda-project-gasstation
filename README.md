@@ -1,8 +1,5 @@
 ![banner](https://github.com/jinhyuk2me/eda-project-gasstation/blob/main/img/banner.png?raw=true)
 
-# 서울시 주유소 데이터 분석   
-> **Exploratory Data Analysis on Gas Stations in Seoul**
-
 ## 📌 프로젝트 개요
 
 서울시 내 주유소들의 **유종별 가격, 브랜드, 운영 시간, 편의시설, 위치** 정보를 분석하여 지역별 가격 편차, 브랜드 특성, 공간 분포 등 **다차원 인사이트를 도출**한 프로젝트입니다.
